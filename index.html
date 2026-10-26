@@ -172,6 +172,10 @@
     document.querySelectorAll('[data-set]').forEach(function (b) {
       b.addEventListener('click', function () { show(b.getAttribute('data-set')); });
     });
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.replace('#', '');
+      if (h === 'en' || h === 'ko') show(h);
+    });
   })();
 </script>
 </body>
