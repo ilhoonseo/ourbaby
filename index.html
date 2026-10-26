@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="우리아기 백색소음기 (Our Baby White Noise) — 앱 소개와 개인정보처리방침 / app overview and privacy policy">
+  <meta name="color-scheme" content="dark">
+  <title>우리아기 백색소음기 · Our Baby White Noise</title>
+  <link rel="icon" href="icon-192.png">
+  <style>
+    :root {
+      --night: #0b1030; --night-2: #1d1c52; --pink: #ffb6ca; --lavender: #cfc2ff;
+      --ink: #f8f6ff; --muted: #c9c5dd; --line: rgba(255,255,255,.14); --card: rgba(22,24,66,.72);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: var(--ink); line-height: 1.7; min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: radial-gradient(circle at 15% 8%, rgba(141,120,232,.25), transparent 26rem),
+                  radial-gradient(circle at 90% 30%, rgba(255,182,202,.14), transparent 22rem),
+                  linear-gradient(165deg, var(--night), var(--night-2) 60%, #33296a);
+    }
+    a { color: #e4dcff; text-underline-offset: .2em; }
+    .wrap { width: min(860px, calc(100% - 32px)); margin: 0 auto; }
+    .top { display: flex; justify-content: flex-end; gap: 8px; padding: 16px 0 0; }
+    .lang button {
+      font: inherit; font-size: .9rem; color: var(--ink); background: rgba(255,255,255,.06);
+      border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer;
+    }
+    .lang button[aria-pressed="true"] { background: linear-gradient(90deg, var(--pink), var(--lavender)); color: #1b1d4a; border-color: transparent; }
+    .hero { text-align: center; padding: 28px 0 8px; }
+    .hero img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+    h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); line-height: 1.2; margin: 18px 0 8px; letter-spacing: -.02em; }
+    .lead { color: var(--muted); margin: 0 auto; max-width: 34rem; }
+    .babies { display: flex; justify-content: center; gap: 10px; margin: 24px 0 8px; }
+    .babies img { width: 64px; height: 64px; border-radius: 50%; border: 3px solid rgba(255,255,255,.9); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 28px 0; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; }
+    .card h3 { margin: 0 0 4px; font-size: 1.02rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .notice { border-left: 3px solid var(--pink); padding: 4px 0 4px 14px; color: #ffe7c9; margin: 8px 0 28px; }
+    .policy { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 6px 22px 18px; margin-bottom: 36px; }
+    .policy h2 { font-size: 1.35rem; margin: 18px 0 4px; }
+    .policy h3 { font-size: 1.02rem; margin: 20px 0 4px; color: var(--lavender); }
+    .policy p, .policy li { color: var(--muted); font-size: .96rem; }
+    .policy ul { padding-left: 1.2rem; margin: 4px 0; }
+    .meta { font-size: .85rem; color: var(--muted); }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 0 32px; }
+    .js [data-lang]:not(.active) { display: none; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top lang" role="group" aria-label="Language">
+    <button type="button" data-set="ko">한국어</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ===================== 한국어 ===================== -->
+  <section data-lang="ko" lang="ko">
+    <div class="hero">
+      <img class="icon" src="icon.png" alt="우리아기 백색소음기 아이콘">
+      <h1>우리아기 백색소음기</h1>
+      <p class="lead">우리 아기 이름과 사진으로 꾸미는 밤하늘 백색소음 타이머예요. 정한 시간이 지나면 소리가 서서히 작아지며 꺼져요.</p>
+      <div class="babies"><img src="baby_0.png" alt=""><img src="baby_1.png" alt=""><img src="baby_3.png" alt=""><img src="baby_4.png" alt=""></div>
+    </div>
+    <div class="cards">
+      <article class="card"><h3>켜면 바로 재생</h3><p>앱을 열면 바로 백색소음이 시작돼요. 15분부터 8시간까지 타이머를 정하면, 끝날 때 소리가 서서히 작아지고 앱이 꺼져요.</p></article>
+      <article class="card"><h3>여섯 가지 소리</h3><p>화이트·핑크·브라운 노이즈, 선풍기 바람, 잔잔한 빗소리, 포근한 파도가 있어요. 녹음 파일 없이 기기에서 바로 만들어요.</p></article>
+      <article class="card"><h3>우리 아기 사진으로</h3><p>사진을 최대 7장 고르면 얼굴을 찾아 동그랗게 맞춰 줘요. 사진이 없으면 귀여운 아기 그림이 나와요.</p></article>
+      <article class="card"><h3>밤에 편하게</h3><p>화면을 어둡게 하고 음량을 조절할 수 있고, 화면이 꺼져도 계속 재생돼요. 알림에서 남은 시간을 보고 바로 끌 수 있어요.</p></article>
+    </div>
+    <p class="notice">부모와 보호자를 위한 도구예요. 의료기기가 아니며 숙면을 보장하지 않아요. 음량은 낮게, 기기는 아기와 떨어진 곳에 두세요.</p>
+
+    <div class="policy" id="privacy-ko">
+      <h2>개인정보처리방침</h2>
+      <p class="meta">시행일: 2026년 10월 27일 · 앱: 우리아기 백색소음기 (com.ilhoon.ourbaby)</p>
+      <h3>1. 처리하는 정보</h3>
+      <ul>
+        <li>아기 이름 (선택 입력)</li>
+        <li>사용자가 직접 고른 사진 (선택, 최대 7장, 동그랗게 잘라 저장)</li>
+        <li>앱 설정: 재생 시간, 소리 종류, 음량, ‘앱 켜면 바로 재생’ 여부</li>
+      </ul>
+      <p>계정, 연락처, 위치, 기기 식별자, 사용 기록은 수집하지 않아요.</p>
+      <h3>2. 이용 목적과 저장 위치</h3>
+      <p>이름과 사진은 앱 화면에 아기를 보여 주는 데에만 쓰여요. 모든 정보는 이 기기의 앱 전용 저장소에만 저장되고, 서버로 보내지 않아요. 앱에는 인터넷 권한, 광고, 분석 도구가 없어요. 사진 속 얼굴 찾기도 Android 기기 안의 기능으로만 처리해요.</p>
+      <h3>3. 사용하는 권한</h3>
+      <ul>
+        <li>알림: 재생 중 남은 시간과 ‘지금 끄기’ 버튼을 보여 줘요. 거부해도 재생은 돼요.</li>
+        <li>포그라운드 서비스(미디어 재생)·절전 해제: 화면이 꺼져도 정한 시간 동안 소리가 이어지게 해요.</li>
+        <li>사진: 사진 전체 접근 권한은 없어요. Android 사진 선택기로 사용자가 고른 사진만 열어요.</li>
+      </ul>
+      <h3>4. 보관 기간과 삭제</h3>
+      <p>설정의 ‘아기 이름·사진 바꾸기’에서 언제든 고치거나 지울 수 있어요. 앱을 삭제하면 모두 함께 지워져요. 클라우드 백업과 기기 간 이전에서도 제외돼요.</p>
+      <h3>5. 제3자 제공과 국외 이전</h3>
+      <p>어떤 정보도 제3자에게 제공하거나 국외로 이전하지 않아요.</p>
+      <h3>6. 이용 대상</h3>
+      <p>이 앱은 아기가 아니라 부모와 보호자가 사용하는 도구예요.</p>
+      <h3>7. 방침 변경</h3>
+      <p>내용이 바뀌면 이 페이지에 시행일과 함께 알려 드려요.</p>
+      <h3>8. 문의</h3>
+      <p>이메일: <a href="mailto:twbtwb0606@gmail.com">twbtwb0606@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- ===================== English ===================== -->
+  <section data-lang="en" lang="en">
+    <div class="hero">
+      <img class="icon" src="icon.png" alt="Our Baby White Noise icon">
+      <h1>Our Baby White Noise</h1>
+      <p class="lead">A night-sky white noise timer you decorate with your baby's name and photos. When the time is up, the sound gently fades out and turns off.</p>
+      <div class="babies"><img src="baby_0.png" alt=""><img src="baby_1.png" alt=""><img src="baby_3.png" alt=""><img src="baby_4.png" alt=""></div>
+    </div>
+    <div class="cards">
+      <article class="card"><h3>Plays as soon as it opens</h3><p>Open the app and the white noise starts. Set a timer from 15 minutes to 8 hours. At the end, the sound fades out and the app closes.</p></article>
+      <article class="card"><h3>Six sounds</h3><p>White, pink and brown noise, a fan, gentle rain and ocean waves, all generated right on the device with no recordings.</p></article>
+      <article class="card"><h3>Your baby's photos</h3><p>Pick up to 7 photos and the app finds your baby's face and frames it in a circle. No photos? Cute baby illustrations are shown instead.</p></article>
+      <article class="card"><h3>Made for the night</h3><p>Dim the screen, adjust the volume, and keep playing with the screen off. See the time left in the notification and stop it from there.</p></article>
+    </div>
+    <p class="notice">A tool for parents and caregivers. It is not a medical device and does not promise better sleep. Keep the volume low and the device away from your baby.</p>
+
+    <div class="policy" id="privacy-en">
+      <h2>Privacy Policy</h2>
+      <p class="meta">Effective: October 27, 2026 · App: Our Baby White Noise (com.ilhoon.ourbaby)</p>
+      <h3>1. Information the app handles</h3>
+      <ul>
+        <li>Your baby's name (optional)</li>
+        <li>Photos you choose yourself (optional, up to 7, saved as circular crops)</li>
+        <li>App settings: timer length, sound, volume and whether to play when the app opens</li>
+      </ul>
+      <p>The app does not collect accounts, contacts, location, device identifiers or usage data.</p>
+      <h3>2. Purpose and storage</h3>
+      <p>The name and photos are used only to show your baby on the app screen. Everything is stored only in the app's private storage on this device and is never sent to a server. The app has no internet permission, ads or analytics. Face detection runs locally on the Android device.</p>
+      <h3>3. Permissions</h3>
+      <ul>
+        <li>Notifications: show the time left and a “Stop now” button while playing. Playback works even if you decline.</li>
+        <li>Foreground service (media playback) and wake lock: keep the sound going for the chosen time with the screen off.</li>
+        <li>Photos: no access to your whole library. The Android photo picker opens only the photos you select.</li>
+      </ul>
+      <h3>4. Retention and deletion</h3>
+      <p>You can edit or delete the name and photos at any time in Settings → “Change baby's name &amp; photos”. Uninstalling the app deletes everything. The data is excluded from cloud backup and device transfer.</p>
+      <h3>5. Sharing and international transfer</h3>
+      <p>No information is shared with third parties or transferred abroad.</p>
+      <h3>6. Intended users</h3>
+      <p>The app is a tool for parents and caregivers, not for children to use.</p>
+      <h3>7. Changes</h3>
+      <p>Any changes will be posted on this page with a new effective date.</p>
+      <h3>8. Contact</h3>
+      <p>Email: <a href="mailto:twbtwb0606@gmail.com">twbtwb0606@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>© 2026 Ilhoon Seo</footer>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var hash = location.hash.replace('#', '');
+    var pick = hash === 'en' || hash === 'ko' ? hash
+             : ((navigator.language || 'en').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en');
+    function show(lang) {
+      root.lang = lang;
+      document.querySelectorAll('[data-lang]').forEach(function (el) {
+        el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+      });
+      document.querySelectorAll('[data-set]').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.getAttribute('data-set') === lang ? 'true' : 'false');
+      });
+    }
+    root.classList.add('js');
+    show(pick);
+    document.querySelectorAll('[data-set]').forEach(function (b) {
+      b.addEventListener('click', function () { show(b.getAttribute('data-set')); });
+    });
+  })();
+</script>
+</body>
+</html>
